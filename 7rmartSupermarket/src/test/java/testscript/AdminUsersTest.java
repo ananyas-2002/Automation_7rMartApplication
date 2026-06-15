@@ -34,9 +34,6 @@ public class AdminUsersTest extends Base {
 		adminusers.enterUsernameForAdmin(newadminusername);
 		adminusers.enterPasswordForAdmin(newadminpassword);
 		adminusers.selectUserType(newadminusertype);
-		//adminusers.enterUsernameForAdmin("ramya234");
-		//adminusers.enterPasswordForAdmin("ramya22");
-		//adminusers.selectUserType("admin");
 		adminusers.saveNewAdminData();
 		//validataion section
 		boolean newuseralert=adminusers.newUserCreatedAlertMessage();

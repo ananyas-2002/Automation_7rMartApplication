@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.AdminUsersTest">
+      <class name="testscript.ManageFooterTextTest">
         <methods>
-          <include name="verifiesAdminUsers"/>
+          <include name="verfiyManagerFooterUpdateData"/>
           <include name="browserQuitandClose"/>
           <include name="browserInitialization"/>
         </methods>
-      </class> <!-- testscript.AdminUsersTest -->
+      </class> <!-- testscript.ManageFooterTextTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

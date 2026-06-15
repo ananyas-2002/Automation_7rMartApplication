@@ -22,11 +22,13 @@ public class ManageNewsTest extends Base {
 		login.enterPassword(password);
 		login.signIn();
 		
+		String newnews=ExcelUtility.readStringData(2, 0, "managenewsaddnewspage");
+		
 		ManageNewsPage managenews=new ManageNewsPage(driver);
 		managenews.clickingManageNews();
 		managenews.clickMoreInfo();
 		managenews.clickNewButtonForAddNews();
-		managenews.clickEnterNewsField("New Item added to the product list!");
+		managenews.clickEnterNewsField(newnews);
 		managenews.clickSaveButton();
 		boolean alertmessage=managenews.isAlertMessageDisplayed();
 		Assert.assertTrue(alertmessage);

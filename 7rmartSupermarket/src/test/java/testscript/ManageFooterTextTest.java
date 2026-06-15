@@ -22,13 +22,17 @@ public class ManageFooterTextTest extends Base {
 		login.enterPassword(password);
 		login.signIn();
 
+		String address=ExcelUtility.readStringData(3, 0, "managefootertextupdate");
+		String email=ExcelUtility.readStringData(3, 1, "managefootertextupdate");
+		String phonenumber=ExcelUtility.readIntegerData(3, 2, "managefootertextupdate");
+		
 		ManageFooterTextPage managefootertext = new ManageFooterTextPage(driver);
 		managefootertext.clickManageFooterText();
 		managefootertext.clickManageFooterTextMoreInfo();
 		managefootertext.clickEditDetailsButton();
-		managefootertext.EnterAddressInAddressField("romanth first block");
-		managefootertext.EnterEmail("romanathan@gmail.com");
-		managefootertext.EnterPhoneNumber("6543267966");
+		managefootertext.EnterAddressInAddressField(address);
+		managefootertext.EnterEmail(email);
+		managefootertext.EnterPhoneNumber(phonenumber);
 		managefootertext.updateButton();
 		boolean alertupdatemeaage=managefootertext.alertUpdateMessageisDisplayed();
 		Assert.assertTrue(alertupdatemeaage);
