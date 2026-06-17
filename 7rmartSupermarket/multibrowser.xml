@@ -10,6 +10,7 @@
       <class name="testscript.ManageFooterTextTest"/>
       <class name="testscript.LogoutTest"/>
       <class name="testscript.LoginTest"/>
+      <class name="testscript.ManageCategoryTest"/>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="ChromeTest">
@@ -21,6 +22,7 @@
       <class name="testscript.ManageFooterTextTest"/>
       <class name="testscript.LogoutTest"/>
       <class name="testscript.LoginTest"/>
+      <class name="testscript.ManageCategoryTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
