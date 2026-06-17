@@ -1,0 +1,39 @@
+package testscript;
+
+import java.io.IOException;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pages.LoginPage;
+import pages.ManageCategoryPage;
+import utilities.ExcelUtility;
+
+public class ManageCategoryTest extends Base {
+	
+	@Test
+	public void verifyManageCategory() throws IOException {
+		
+		String username=ExcelUtility.readStringData(1, 0, "loginpage");
+		String password=ExcelUtility.readStringData(1, 1, "loginpage");
+		
+		LoginPage login=new LoginPage(driver);
+		login.enterUsername(username);
+		login.enterPassword(password);
+		login.signIn();
+		
+		String categoryname=ExcelUtility.readStringData(3, 0, "managecategorypage");
+		ManageCategoryPage managecategory=new ManageCategoryPage(driver);
+		managecategory.clickManageCategory();
+		managecategory.clickManageCategoryMoreInfo();
+		managecategory.clickNewButton();
+		managecategory.enterCategory(categoryname);
+		managecategory.selectDiscount();
+		managecategory.choosefilecategory();
+		managecategory.savecategory();
+		boolean alertmessage=managecategory.categoryCreatedIsDisplayed();
+		Assert.assertTrue(alertmessage);
+				
+	}
+
+}

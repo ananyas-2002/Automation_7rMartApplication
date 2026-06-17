@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-15T21:06:41 IST" name="Default suite" finished-at="2026-06-15T21:06:47 IST" duration-ms="6238">
+  <suite started-at="2026-06-17T11:22:15 IST" name="Default suite" finished-at="2026-06-17T11:22:22 IST" duration-ms="6540">
     <groups>
     </groups>
-    <test started-at="2026-06-15T21:06:41 IST" name="Default test" finished-at="2026-06-15T21:06:47 IST" duration-ms="6238">
-      <class name="testscript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testscript.ManageNewsTest@59474f18]" started-at="2026-06-15T21:06:41 IST" name="browserInitialization" finished-at="2026-06-15T21:06:44 IST" duration-ms="3102" status="PASS">
+    <test started-at="2026-06-17T11:22:15 IST" name="Default test" finished-at="2026-06-17T11:22:22 IST" duration-ms="6540">
+      <class name="testscript.ManageCategoryTest">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testscript.ManageCategoryTest@59474f18]" started-at="2026-06-17T11:22:15 IST" name="browserInitialization" finished-at="2026-06-17T11:22:18 IST" duration-ms="2791" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifiesManageNewsFeature()[pri:0, instance:testscript.ManageNewsTest@59474f18]" started-at="2026-06-15T21:06:44 IST" name="verifiesManageNewsFeature" finished-at="2026-06-15T21:06:47 IST" duration-ms="2919" status="PASS">
+        <test-method signature="verifyManageCategory()[pri:0, instance:testscript.ManageCategoryTest@59474f18]" started-at="2026-06-17T11:22:18 IST" name="verifyManageCategory" finished-at="2026-06-17T11:22:21 IST" duration-ms="3532" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifiesManageNewsFeature -->
-        <test-method is-config="true" signature="browserQuitandClose()[pri:0, instance:testscript.ManageNewsTest@59474f18]" started-at="2026-06-15T21:06:47 IST" name="browserQuitandClose" finished-at="2026-06-15T21:06:47 IST" duration-ms="166" status="PASS">
+        </test-method> <!-- verifyManageCategory -->
+        <test-method is-config="true" signature="browserQuitandClose()[pri:0, instance:testscript.ManageCategoryTest@59474f18]" started-at="2026-06-17T11:22:21 IST" name="browserQuitandClose" finished-at="2026-06-17T11:22:22 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuitandClose -->
-      </class> <!-- testscript.ManageNewsTest -->
+      </class> <!-- testscript.ManageCategoryTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
