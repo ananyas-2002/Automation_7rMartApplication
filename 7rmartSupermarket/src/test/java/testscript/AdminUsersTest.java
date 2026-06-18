@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class AdminUsersTest extends Base {
 	
-	@Test
+	@Test(description="Validating Admin Users Page")
 	public void verifiesAdminUsers() throws IOException {
 		
 		String username=ExcelUtility.readStringData(1, 0, "loginpage");

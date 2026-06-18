@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class ManageNewsTest extends Base {
 	
-	@Test
+	@Test(description="Validating Manage News Page")
 	public void verifiesManageNewsFeature() throws IOException {
 		
 		String username=ExcelUtility.readStringData(1, 0, "loginpage");

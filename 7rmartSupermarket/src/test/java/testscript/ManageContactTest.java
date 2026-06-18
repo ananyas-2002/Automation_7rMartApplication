@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class ManageContactTest extends Base{
 	
-	@Test
+	@Test(description="Validating Manage Contact Page")
 	public void verifyManageContact() throws IOException {
 		
 		String username=ExcelUtility.readStringData(1, 0, "loginpage");
