@@ -23,7 +23,7 @@ public class Base {
 	public Properties properties;
 	public FileInputStream fileinput;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	public void browserInitialization(String browser) throws Exception {
 
@@ -47,12 +47,13 @@ public class Base {
 		driver.manage().window().maximize();
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void browserQuit(ITestResult iTestResult) throws IOException {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
 			ScreenShotUtility scrShot = new ScreenShotUtility(); // creating obj
 			scrShot.getScreenShot(driver, iTestResult.getName());
 		}
+		driver.quit();
 	}
 }
 

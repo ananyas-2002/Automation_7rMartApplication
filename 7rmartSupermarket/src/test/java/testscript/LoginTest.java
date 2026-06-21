@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 
-	@Test(description = "Validating Login functionality")
+	@Test(description = "Validating Login functionality",groups= {"regression"})  //to perform regression testing
 	public void loginWithValidCredentials() throws IOException {
 
 		String username = ExcelUtility.readStringData(1, 0, "loginpage");

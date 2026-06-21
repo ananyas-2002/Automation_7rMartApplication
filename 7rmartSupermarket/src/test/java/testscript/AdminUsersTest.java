@@ -7,11 +7,13 @@ import org.testng.annotations.Test;
 
 import pages.AdminUsersPage;
 import pages.LoginPage;
+import retry.Retry;
 import utilities.ExcelUtility;
+import utilities.FakerUtility;
 
 public class AdminUsersTest extends Base {
 	
-	@Test(description="Validating Admin Users Page")
+	@Test(description="Validating Admin Users Page", retryAnalyzer=retry.Retry.class)
 	public void verifiesAdminUsers() throws IOException {
 		
 		String username=ExcelUtility.readStringData(1, 0, "loginpage");
@@ -22,9 +24,11 @@ public class AdminUsersTest extends Base {
 		login.enterPassword(password);
 		login.signIn();
 		
-		String newadminusername=ExcelUtility.readStringData(2, 0, "adminuserpage");
+		//String newadminusername=ExcelUtility.readStringData(2, 0, "adminuserpage");
 		String newadminpassword=ExcelUtility.readStringData(2, 1, "adminuserpage");
 		String newadminusertype=ExcelUtility.readStringData(2, 2, "adminuserpage");
+		FakerUtility fake=new FakerUtility();
+		String newadminusername=fake.creatARandomFirstName(); //for generating fake data such as here generating fake username
 
 		
 		AdminUsersPage adminusers=new AdminUsersPage(driver);
