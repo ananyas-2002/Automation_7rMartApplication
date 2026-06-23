@@ -5,15 +5,15 @@
 		<listener class-name="generatereport.Listeners"></listener>
 	</listeners>
   <test thread-count="5" name="EdgeTest">
-  <parameter name="browser" value="Edge"></parameter>
+  <parameter name="browser" value="Chrome"></parameter>
     <classes>
     <class name="testscript.LoginTest"/>
-     <!--  <class name="testscript.AdminUsersTest"/>
+     <class name="testscript.AdminUsersTest"/>
       <class name="testscript.ManageContactTest"/>
       <class name="testscript.ManageNewsTest"/>
       <class name="testscript.ManageFooterTextTest"/>
       <class name="testscript.LogoutTest"/>
-      <class name="testscript.ManageCategoryTest"/>-->
+      <class name="testscript.ManageCategoryTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
