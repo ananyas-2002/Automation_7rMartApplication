@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 
-	@Test(description = "Validating Login functionality",groups= {"regression"})  //to perform regression testing
+	@Test(description = "Validating Login functionality with valid credentials",groups= {"regression"})  //to perform regression testing
 	public void loginWithValidCredentials() throws IOException {
 
 		String username = ExcelUtility.readStringData(1, 0, "loginpage");
@@ -26,7 +26,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test
+	@Test(description = "Validating Login functionality with invalid username and valid password")
 	public void loginWithInvalidusernameAndValidPassword() throws IOException {
 
 		String username = ExcelUtility.readStringData(2, 0, "loginpage");
@@ -41,7 +41,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test
+	@Test(description = "Validating Login functionality with valid username and invalid password")
 	public void loginWithValidusernameAndInvalidPassword() throws IOException {
 
 		String username = ExcelUtility.readStringData(3, 0, "loginpage");
@@ -56,7 +56,7 @@ public class LoginTest extends Base {
 
 	}
 
-	@Test
+	@Test(description = "Validating Login functionality with invalid credentials")
 	public void loginWithInvalidCredentials() throws IOException {
 
 		String username = ExcelUtility.readStringData(4, 0, "loginpage");
