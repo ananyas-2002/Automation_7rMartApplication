@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
@@ -22,7 +23,7 @@ public class LoginTest extends Base {
 		login.signIn();
 		// login.remeberMe();
 		boolean homepage = login.isDashboardDisplayed();
-		Assert.assertTrue(homepage);
+		Assert.assertTrue(homepage,Constant.VALIDCREDENTIALS);
 
 	}
 
