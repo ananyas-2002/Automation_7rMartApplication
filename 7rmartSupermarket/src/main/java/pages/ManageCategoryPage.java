@@ -13,8 +13,8 @@ import utilities.PageUtility;
 public class ManageCategoryPage {
 	@FindBy(xpath = "(//div[@class='inner'])[9]")
 	WebElement managecategory;
-	@FindBy(xpath = "(//a[@class='small-box-footer'])[9]")
-	WebElement managaecategorymoreinfo;
+//	@FindBy(xpath = "(//a[@class='small-box-footer'])[9]")
+	// WebElement managaecategorymoreinfo;
 	@FindBy(xpath = "(//a[contains(@class,'danger')])[1]")
 	WebElement newbutton;
 	@FindBy(xpath = "//input[@id='category']")
@@ -30,43 +30,46 @@ public class ManageCategoryPage {
 
 	public WebDriver driver;
 	FileUploadUtility fileupload = new FileUploadUtility();
-	//WaitUtility wait = new WaitUtility();
-	PageUtility page=new PageUtility();
+	// WaitUtility wait = new WaitUtility();
+	PageUtility page = new PageUtility();
 
 	public ManageCategoryPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	/*
+	 * public void clickManageCategory() { managecategory.click(); }
+	 * 
+	 * public ManageCategoryPage clickManageCategoryMoreInfo() {
+	 * managaecategorymoreinfo.click(); return this; }
+	 */
 
-	public void clickManageCategory() {
-		managecategory.click();
-	}
-
-	public void clickManageCategoryMoreInfo() {
-		managaecategorymoreinfo.click();
-	}
-
-	public void clickNewButton() {
+	public ManageCategoryPage clickNewButton() {
 		newbutton.click();
+		return this;
 	}
 
-	public void enterCategory(String category) {
+	public ManageCategoryPage enterCategory(String category) {
 		categoryinput.sendKeys(category);
+		return this;
 	}
 
-	public void selectDiscount() {
+	public ManageCategoryPage selectDiscount() {
 		discount.click();
+		return this;
 	}
 
-	public void choosefilecategory() {
-		//fileupload.fileUploadUsingSendKeys(choosefile);
+	public ManageCategoryPage choosefilecategory() {
+		// fileupload.fileUploadUsingSendKeys(choosefile);
 		fileupload.fileUploadUsingSendKeys(choosefile, Constant.BERRYIMG);
+		return this;
 	}
 
-	public void savecategory() {
-		//wait.waitForElementToBeClickable(driver, save);
+	public ManageCategoryPage savecategory() {
+		// wait.waitForElementToBeClickable(driver, save);
 		page.javaScriptExecutorClick(driver, save);
-	//	save.click();
+		// save.click();
+		return this;
 	}
 
 	public boolean categoryCreatedIsDisplayed() {

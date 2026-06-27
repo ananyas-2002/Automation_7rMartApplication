@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Grouping" class="navigator-link">
-              <span class="suite-name border-passed">Grouping</span>
+            <a href="#" panel-name="suite-TestNGSuite" class="navigator-link">
+              <span class="suite-name border-failed">TestNGSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Grouping" class="navigator-link ">
-                    <span>C:\Users\anany\git\Automation_7rMartApplication\7rmartSupermarket\grouping.xml</span>
+                  <a href="#" panel-name="test-xml-TestNGSuite" class="navigator-link ">
+                    <span>C:\Users\anany\git\Automation_7rMartApplication\7rmartSupermarket\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="testlist-TestNGSuite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="group-TestNGSuite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="times-TestNGSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="reporter-TestNGSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-TestNGSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Grouping" class="navigator-link ">
+                  <a href="#" panel-name="chronological-TestNGSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,94 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  2 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNGSuite" class="hide-methods failed suite-TestNGSuite"> (hide)</a> <!-- hide-methods failed suite-TestNGSuite -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="show-methods failed suite-TestNGSuite"> (show)</a> <!-- show-methods failed suite-TestNGSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNGSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifiesAdminUsers">verifiesAdminUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNGSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNGSuite" class="hide-methods skipped suite-TestNGSuite"> (hide)</a> <!-- hide-methods skipped suite-TestNGSuite -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="show-methods skipped suite-TestNGSuite"> (show)</a> <!-- show-methods skipped suite-TestNGSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNGSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifiesAdminUsers">verifiesAdminUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.AdminUsersTest" class="method navigator-link" hash-for-method="verifiesAdminUsers">verifiesAdminUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNGSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Grouping" class="hide-methods passed suite-Grouping"> (hide)</a> <!-- hide-methods passed suite-Grouping -->
-                      <a href="#" panel-name="suite-Grouping" class="show-methods passed suite-Grouping"> (show)</a> <!-- show-methods passed suite-Grouping -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="hide-methods passed suite-TestNGSuite"> (hide)</a> <!-- hide-methods passed suite-TestNGSuite -->
+                      <a href="#" panel-name="suite-TestNGSuite" class="show-methods passed suite-TestNGSuite"> (show)</a> <!-- show-methods passed suite-TestNGSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Grouping">
+                    <div class="method-list-content passed suite-TestNGSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testscript.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidCredentials">loginWithInvalidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Grouping" title="testscript.LogoutTest" class="method navigator-link" hash-for-method="verifiesLogout">verifiesLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="loginWithInvalidusernameAndValidPassword">loginWithInvalidusernameAndValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Grouping -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="loginWithValidusernameAndInvalidPassword">loginWithValidusernameAndInvalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.ManageFooterTextTest" class="method navigator-link" hash-for-method="verfiyManagerFooterUpdateData">verfiyManagerFooterUpdateData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.HomeTest" class="method navigator-link" hash-for-method="verifiesLogout">verifiesLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.ManageNewsTest" class="method navigator-link" hash-for-method="verifiesManageNewsFeature">verifiesManageNewsFeature</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.ManageCategoryTest" class="method navigator-link" hash-for-method="verifyManageCategory">verifyManageCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestNGSuite" title="testscript.ManageContactTest" class="method navigator-link" hash-for-method="verifyManageContact">verifyManageContact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNGSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,11 +190,216 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Grouping" class="panel Grouping">
-          <div class="suite-Grouping-class-passed">
+        <div panel-name="suite-TestNGSuite" class="panel TestNGSuite">
+          <div class="suite-TestNGSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.AdminUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifiesAdminUsers">
+                  </a> <!-- verifiesAdminUsers -->
+                  <span class="method-name">verifiesAdminUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)]&quot;}
+  (Session info: MicrosoftEdge=149.0.4022.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [814f6b4d3e732c5b2df0d2a8fa10bbbd, findElement {value=//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.80, fedcm:accounts: true, goog:processID: 19908, ms:edgeOptions: {debuggerAddress: localhost:58440}, msedge: {msedgedriverVersion: 149.0.4022.98 (d8414318246f..., userDataDir: C:\Users\anany\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58440/devtoo..., se:cdpVersion: 149.0.4022.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 814f6b4d3e732c5b2df0d2a8fa10bbbd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at pages.AdminUsersPage.newUserCreatedAlertMessage(AdminUsersPage.java:58)
+	at testscript.AdminUsersTest.verifiesAdminUsers(AdminUsersTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validating Admin Users Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-failed -->
+          <div class="suite-TestNGSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.AdminUsersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifiesAdminUsers">
+                  </a> <!-- verifiesAdminUsers -->
+                  <span class="method-name">verifiesAdminUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)]&quot;}
+  (Session info: MicrosoftEdge=149.0.4022.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [42029603d8396abae3b79d42350461fc, findElement {value=//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.80, fedcm:accounts: true, goog:processID: 18968, ms:edgeOptions: {debuggerAddress: localhost:63639}, msedge: {msedgedriverVersion: 149.0.4022.98 (d8414318246f..., userDataDir: C:\Users\anany\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63639/devtoo..., se:cdpVersion: 149.0.4022.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 42029603d8396abae3b79d42350461fc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at pages.AdminUsersPage.newUserCreatedAlertMessage(AdminUsersPage.java:58)
+	at testscript.AdminUsersTest.verifiesAdminUsers(AdminUsersTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validating Admin Users Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifiesAdminUsers">
+                  </a> <!-- verifiesAdminUsers -->
+                  <span class="method-name">verifiesAdminUsers</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)]&quot;}
+  (Session info: MicrosoftEdge=149.0.4022.80)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [979dcd310c6da6d0923f5d28c02264e3, findElement {value=//div[contains(@class,&apos;alert alert-success alert-dismissible&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 149.0.4022.80, fedcm:accounts: true, goog:processID: 4348, ms:edgeOptions: {debuggerAddress: localhost:61083}, msedge: {msedgedriverVersion: 149.0.4022.98 (d8414318246f..., userDataDir: C:\Users\anany\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61083/devtoo..., se:cdpVersion: 149.0.4022.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 979dcd310c6da6d0923f5d28c02264e3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:384)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:378)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at pages.AdminUsersPage.newUserCreatedAlertMessage(AdminUsersPage.java:58)
+	at testscript.AdminUsersTest.verifiesAdminUsers(AdminUsersTest.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validating Admin Users Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-skipped -->
+          <div class="suite-TestNGSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testscript.LogoutTest</span>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidCredentials">
+                  </a> <!-- loginWithInvalidCredentials -->
+                  <span class="method-name">loginWithInvalidCredentials</span>
+                  <em>
+(Validating Login functionality with invalid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithInvalidusernameAndValidPassword">
+                  </a> <!-- loginWithInvalidusernameAndValidPassword -->
+                  <span class="method-name">loginWithInvalidusernameAndValidPassword</span>
+                  <em>
+(Validating Login functionality with invalid username and valid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidCredentials">
+                  </a> <!-- loginWithValidCredentials -->
+                  <span class="method-name">loginWithValidCredentials</span>
+                  <em>
+(Validating Login functionality with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidusernameAndInvalidPassword">
+                  </a> <!-- loginWithValidusernameAndInvalidPassword -->
+                  <span class="method-name">loginWithValidusernameAndInvalidPassword</span>
+                  <em>
+(Validating Login functionality with valid username and invalid password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-passed -->
+          <div class="suite-TestNGSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageNewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifiesManageNewsFeature">
+                  </a> <!-- verifiesManageNewsFeature -->
+                  <span class="method-name">verifiesManageNewsFeature</span>
+                  <em>
+(Validating Manage News Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-passed -->
+          <div class="suite-TestNGSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageFooterTextTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verfiyManagerFooterUpdateData">
+                  </a> <!-- verfiyManagerFooterUpdateData -->
+                  <span class="method-name">verfiyManagerFooterUpdateData</span>
+                  <em>
+(Validating Manage Footer Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-passed -->
+          <div class="suite-TestNGSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.HomeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -139,61 +412,73 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Grouping-class-passed -->
-          <div class="suite-Grouping-class-passed">
+          </div> <!-- suite-TestNGSuite-class-passed -->
+          <div class="suite-TestNGSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testscript.LoginTest</span>
+              <span class="class-name">testscript.ManageContactTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginWithValidCredentials">
-                  </a> <!-- loginWithValidCredentials -->
-                  <span class="method-name">loginWithValidCredentials</span>
+                  <a name="verifyManageContact">
+                  </a> <!-- verifyManageContact -->
+                  <span class="method-name">verifyManageContact</span>
                   <em>
-(Validating Login functionality)                  </em>
+(Validating Manage Contact Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Grouping-class-passed -->
-        </div> <!-- panel Grouping -->
-        <div panel-name="test-xml-Grouping" class="panel">
+          </div> <!-- suite-TestNGSuite-class-passed -->
+          <div class="suite-TestNGSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.ManageCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyManageCategory">
+                  </a> <!-- verifyManageCategory -->
+                  <span class="method-name">verifyManageCategory</span>
+                  <em>
+(Validating Manage Category Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGSuite-class-passed -->
+        </div> <!-- panel TestNGSuite -->
+        <div panel-name="test-xml-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\anany\git\Automation_7rMartApplication\7rmartSupermarket\grouping.xml</span>
+            <span class="header-content">C:\Users\anany\git\Automation_7rMartApplication\7rmartSupermarket\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Grouping&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;TestNGSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;regression&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
       &lt;class name=&quot;testscript.AdminUsersTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageContactTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageNewsTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageFooterTextTest&quot;/&gt;
-      &lt;class name=&quot;testscript.LogoutTest&quot;/&gt;
-      &lt;class name=&quot;testscript.LoginTest&quot;/&gt;
+      &lt;class name=&quot;testscript.HomeTest&quot;/&gt;
       &lt;class name=&quot;testscript.ManageCategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- EdgeTest --&gt;
-&lt;/suite&gt; &lt;!-- Grouping --&gt;
+&lt;/suite&gt; &lt;!-- TestNGSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Grouping" class="panel">
+        <div panel-name="testlist-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Grouping</span>
+            <span class="header-content">Tests for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -203,9 +488,9 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Grouping" class="panel">
+        <div panel-name="group-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Grouping</span>
+            <span class="header-content">Groups for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -222,132 +507,263 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Grouping" class="panel">
+        <div panel-name="times-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Grouping</span>
+            <span class="header-content">Times for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Grouping');
-function tableData_Grouping() {
+suiteTableInitFunctions.push('tableData_TestNGSuite');
+function tableData_TestNGSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifiesLogout')
-data.setCell(0, 2, 'testscript.LogoutTest')
-data.setCell(0, 3, 1989);
+data.setCell(0, 1, 'verifiesAdminUsers')
+data.setCell(0, 2, 'testscript.AdminUsersTest')
+data.setCell(0, 3, 7073);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginWithValidCredentials')
-data.setCell(1, 2, 'testscript.LoginTest')
-data.setCell(1, 3, 721);
-window.suiteTableData['Grouping']= { tableData: data, tableDiv: 'times-div-Grouping'}
+data.setCell(1, 1, 'verifiesAdminUsers')
+data.setCell(1, 2, 'testscript.AdminUsersTest')
+data.setCell(1, 3, 6623);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifiesAdminUsers')
+data.setCell(2, 2, 'testscript.AdminUsersTest')
+data.setCell(2, 3, 6569);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyManageContact')
+data.setCell(3, 2, 'testscript.ManageContactTest')
+data.setCell(3, 3, 2218);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifiesManageNewsFeature')
+data.setCell(4, 2, 'testscript.ManageNewsTest')
+data.setCell(4, 3, 1661);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyManageCategory')
+data.setCell(5, 2, 'testscript.ManageCategoryTest')
+data.setCell(5, 3, 1565);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verfiyManagerFooterUpdateData')
+data.setCell(6, 2, 'testscript.ManageFooterTextTest')
+data.setCell(6, 3, 1425);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'loginWithInvalidCredentials')
+data.setCell(7, 2, 'testscript.LoginTest')
+data.setCell(7, 3, 1287);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifiesLogout')
+data.setCell(8, 2, 'testscript.HomeTest')
+data.setCell(8, 3, 799);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'loginWithValidCredentials')
+data.setCell(9, 2, 'testscript.LoginTest')
+data.setCell(9, 3, 656);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginWithInvalidusernameAndValidPassword')
+data.setCell(10, 2, 'testscript.LoginTest')
+data.setCell(10, 3, 446);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginWithValidusernameAndInvalidPassword')
+data.setCell(11, 2, 'testscript.LoginTest')
+data.setCell(11, 3, 423);
+window.suiteTableData['TestNGSuite']= { tableData: data, tableDiv: 'times-div-TestNGSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
-              <div id="times-div-Grouping">
-              </div> <!-- times-div-Grouping -->
+              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <div id="times-div-TestNGSuite">
+              </div> <!-- times-div-TestNGSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Grouping" class="panel">
+        <div panel-name="reporter-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Grouping</span>
+            <span class="header-content">Reporter output for TestNGSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Grouping" class="panel">
+        <div panel-name="ignored-methods-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.AdminUsersTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifiesAdminUsers</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageFooterTextTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verfiyManagerFooterUpdateData</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginWithValidusernameAndInvalidPassword</span>
-                <br/>
-                <span class="ignored-method-name">loginWithInvalidCredentials</span>
-                <br/>
-                <span class="ignored-method-name">loginWithInvalidusernameAndValidPassword</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageNewsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifiesManageNewsFeature</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageCategoryTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyManageCategory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testscript.ManageContactTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyManageContact</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Grouping" class="panel">
+        <div panel-name="chronological-TestNGSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscript.LogoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization(Edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifiesLogout</span>
-                <span class="method-start">2529 ms</span>
+                <span class="method-name">loginWithInvalidCredentials</span>
+                <span class="method-start">6050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">browserQuit([TestResult name=verifiesLogout status=SUCCESS method=LogoutTest.verifiesLogout()[pri:0, instance:te...)</span>
-                <span class="method-start">4526 ms</span>
+                <span class="method-name">browserQuit([TestResult name=loginWithInvalidCredentials status=SUCCESS method=LoginTest.loginWithInvalidCredent...)</span>
+                <span class="method-start">7347 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitialization(Edge)</span>
-                <span class="method-start">4708 ms</span>
+                <span class="method-start">7493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithInvalidusernameAndValidPassword</span>
+                <span class="method-start">8986 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=loginWithInvalidusernameAndValidPassword status=SUCCESS method=LoginTest.loginWithI...)</span>
+                <span class="method-start">9434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">9606 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">6502 ms</span>
+                <span class="method-start">11112 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserQuit([TestResult name=loginWithValidCredentials status=SUCCESS method=LoginTest.loginWithValidCredentials...)</span>
-                <span class="method-start">7224 ms</span>
+                <span class="method-start">11770 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">11929 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidusernameAndInvalidPassword</span>
+                <span class="method-start">13484 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=loginWithValidusernameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithV...)</span>
+                <span class="method-start">13908 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.AdminUsersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">14075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifiesAdminUsers</span>
+                <span class="method-start">15590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifiesAdminUsers status=SKIP method=AdminUsersTest.verifiesAdminUsers()[pri:0, in...)</span>
+                <span class="method-start">22671 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">23000 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifiesAdminUsers</span>
+                <span class="method-start">24480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifiesAdminUsers status=SKIP method=AdminUsersTest.verifiesAdminUsers()[pri:0, in...)</span>
+                <span class="method-start">31103 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">31416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifiesAdminUsers</span>
+                <span class="method-start">32958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifiesAdminUsers status=FAILURE method=AdminUsersTest.verifiesAdminUsers()[pri:0,...)</span>
+                <span class="method-start">39547 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageContactTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">39970 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyManageContact</span>
+                <span class="method-start">41514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyManageContact status=SUCCESS method=ManageContactTest.verifyManageContact()[p...)</span>
+                <span class="method-start">43733 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageNewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">43903 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifiesManageNewsFeature</span>
+                <span class="method-start">45511 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifiesManageNewsFeature status=SUCCESS method=ManageNewsTest.verifiesManageNewsFe...)</span>
+                <span class="method-start">47173 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageFooterTextTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">47332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verfiyManagerFooterUpdateData</span>
+                <span class="method-start">48934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verfiyManagerFooterUpdateData status=SUCCESS method=ManageFooterTextTest.verfiyMana...)</span>
+                <span class="method-start">50362 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.HomeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">50532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifiesLogout</span>
+                <span class="method-start">52032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifiesLogout status=SUCCESS method=HomeTest.verifiesLogout()[pri:0, instance:test...)</span>
+                <span class="method-start">52832 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageCategoryTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitialization(Edge)</span>
+                <span class="method-start">52979 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyManageCategory</span>
+                <span class="method-start">54451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">browserQuit([TestResult name=verifyManageCategory status=SUCCESS method=ManageCategoryTest.verifyManageCategory(...)</span>
+                <span class="method-start">56017 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

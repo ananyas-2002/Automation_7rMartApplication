@@ -12,7 +12,7 @@
       <class name="testscript.ManageContactTest"/>
       <class name="testscript.ManageNewsTest"/>
       <class name="testscript.ManageFooterTextTest"/>
-      <class name="testscript.LogoutTest"/>
+      <class name="testscript.HomeTest"/>
       <class name="testscript.ManageCategoryTest"/>
     </classes>
   </test> <!-- Test -->

@@ -10,7 +10,7 @@ import utilities.PageUtility;
 public class AdminUsersPage {
 	
 	@FindBy(xpath="(//p[contains(text(),'Admin Users')])[2]")WebElement adminusers;
-	@FindBy(xpath="(//a[@class='small-box-footer'])[1]")WebElement adminmoreinfo;
+	//@FindBy(xpath="(//a[@class='small-box-footer'])[1]")WebElement adminmoreinfo;
 	@FindBy(xpath="//a[contains(@class,'btn btn-rounded btn-danger')]")WebElement newbutton;
 	@FindBy(css="input#username")WebElement usernamefield;
 	@FindBy(css="input#password")WebElement passwordfield;
@@ -26,27 +26,33 @@ public class AdminUsersPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+	/*
 	public void clickAdminUsers() {
 		adminusers.click();
 	}
-	public void clickAdminUsersMoreInfo() {
+	public AdminUsersPage clickAdminUsersMoreInfo() {
 		adminmoreinfo.click();
-	}
-	public void clickNewButton() {
+		return this;
+	}*/
+	public AdminUsersPage clickNewButton() {
 		newbutton.click();
+		return this;
 	}
-	public void enterUsernameForAdmin(String usernameinput) {
+	public AdminUsersPage enterUsernameForAdmin(String usernameinput) {
 		usernamefield.sendKeys(usernameinput);
+		return this;
 	}
-	public void enterPasswordForAdmin(String passwordinput) {
+	public AdminUsersPage enterPasswordForAdmin(String passwordinput) {
 		passwordfield.sendKeys(passwordinput);
+		return this;
 	}
-	public void selectUserType(String value) {
+	public AdminUsersPage selectUserType(String value) {
 		page.dropdownValue(usertype, value);
+		return this;
 	}
-	public void saveNewAdminData() {
+	public AdminUsersPage saveNewAdminData() {
 		savebutton.click();
+		return this;
 	}
 	public boolean newUserCreatedAlertMessage() {
 		return newuseralertmessage.isDisplayed();
