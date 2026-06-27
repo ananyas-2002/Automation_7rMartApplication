@@ -24,21 +24,24 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void enterUsername(String username) {
+	public LoginPage enterUsername(String username) {
 	usernamefield.sendKeys(username);
+	return this;
 	}
 	
-	public void enterPassword(String password) {
+	public LoginPage enterPassword(String password) {
 		passwordfield.sendKeys(password);
+		return this;
 	}
-	public void signIn() {
+	public HomePage signIn() {
 		//wait.waitForElementToBeClickable(driver, signin);
 		signin.click();
+		return new HomePage(driver);
 	}
-	
+	/*
 	public void remeberMe() {
 		rememberme.click();
-	}
+	}*/
 	public boolean isDashboardDisplayed() {  //for validation created this method, Assertion done in test class bcz for validation using Assertion 
 		return dashboard.isDisplayed();  
 	}

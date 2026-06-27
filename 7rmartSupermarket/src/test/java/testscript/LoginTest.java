@@ -6,11 +6,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constant.Constant;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
-
+	HomePage homepage;
 	@Test(description = "Validating Login functionality with valid credentials",groups= {"regression"})  //to perform regression testing
 	public void loginWithValidCredentials() throws IOException {
 
@@ -18,9 +19,9 @@ public class LoginTest extends Base {
 		String password = ExcelUtility.readStringData(1, 1, "loginpage");
 
 		LoginPage login = new LoginPage(driver);
-		login.enterUsername(username);
-		login.enterPassword(password);
-		login.signIn();
+		login.enterUsername(username).enterPassword(password);
+		//login.enterPassword(password);
+		homepage=login.signIn();
 		// login.remeberMe();
 		boolean homepage = login.isDashboardDisplayed();
 		Assert.assertTrue(homepage,Constant.VALIDCREDENTIALS);

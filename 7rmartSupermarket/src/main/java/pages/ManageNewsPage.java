@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ManageNewsPage {
 	    @FindBy(xpath="(//p[contains(text(),'Manage News')])[2]")WebElement managenews;
-	    @FindBy(xpath="(//a[contains(@class,'small-box')])[7]")WebElement moreinfobutton;
+	   // @FindBy(xpath="(//a[contains(@class,'small-box')])[7]")WebElement moreinfobutton;
 	    @FindBy(xpath="//a[contains(@class,'btn btn-rounded btn-danger')]")WebElement newbutton;
 	    @FindBy(css="textarea#news")WebElement enternewsinputfield;
 	    @FindBy(css="button[type='submit']")WebElement savebutton;
@@ -19,21 +19,25 @@ public class ManageNewsPage {
 	    	PageFactory.initElements(driver, this);
 	    	
 	    }
-	    
+	    /*
 	    public void clickingManageNews() {
 	    	managenews.click();
 	    }
-	    public void clickMoreInfo() {
+	    public ManageNewsPage clickMoreInfo() {
 	    	moreinfobutton.click();
-	    }
-	    public void clickNewButtonForAddNews() {
+			return this;
+	    }*/
+	    public ManageNewsPage clickNewButtonForAddNews() {
 	    	newbutton.click();
+			return this;
 	    }
-	    public void clickEnterNewsField(String newnews) {
+	    public ManageNewsPage clickEnterNewsField(String newnews) {
 	    	enternewsinputfield.sendKeys(newnews);
+			return this;
 	    }
-	    public void clickSaveButton() {
+	    public ManageNewsPage clickSaveButton() {
 	    	savebutton.click();
+			return this;
 	    }
 	    public boolean isAlertMessageDisplayed() {
 			return alertmessage.isDisplayed();

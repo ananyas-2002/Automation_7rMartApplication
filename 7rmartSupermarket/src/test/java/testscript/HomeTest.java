@@ -6,10 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
-import pages.LogoutPage;
+import pages.HomePage;
 import utilities.ExcelUtility;
 
-public class LogoutTest extends Base {
+public class HomeTest extends Base {
 
 	@Test(description="Validate logout functionality",groups= {"regression"})
 	public void verifiesLogout() throws IOException {
@@ -22,7 +22,7 @@ public class LogoutTest extends Base {
 		login.enterPassword(password);
 		login.signIn();
 
-		LogoutPage logout = new LogoutPage(driver);
+		HomePage logout = new HomePage(driver);
 		logout.clickAdminIcon();
 		logout.clickLogoutButton();
 		boolean signdisplay = logout.isSignDisplayed();

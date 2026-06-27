@@ -11,7 +11,7 @@ import utilities.PageUtility;
 public class ManageContactPage {
 	
 	@FindBy(xpath="(//div[@class='inner'])[3]")WebElement manangecontact;
-	@FindBy(xpath="(//a[@class='small-box-footer'])[3]")WebElement managecontactmoreinfo;
+	//@FindBy(xpath="(//a[@class='small-box-footer'])[3]")WebElement managecontactmoreinfo;
 	@FindBy(xpath="//a[@role='button']")WebElement actionbutton;
 	@FindBy(xpath="//input[@id='phone']")WebElement phonenumberinputfield;
 	@FindBy(xpath="//input[@id='email']")WebElement emailinputfield;
@@ -30,34 +30,42 @@ public class ManageContactPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	public void clickManageContact() {
+	public ManageContactPage clickManageContact() {
 		manangecontact.click();
-	}
+		return this;
+	}/*
 	public void clickManageContactMoreInfo() {
 		managecontactmoreinfo.click();
-	}
-	public void clickActionbutton() {
+	}*/
+	public ManageContactPage clickActionbutton() {
 		actionbutton.click();
+		return this;
 	}
-	public void enterPhonenumber(String phonenumber) {
+	public ManageContactPage enterPhonenumber(String phonenumber) {
 		phonenumberinputfield.sendKeys(phonenumber);
+		return this;
 	}
-	public void enterEmail(String email) {
+	public ManageContactPage enterEmail(String email) {
 		emailinputfield.sendKeys(email);
+		return this;
 	}
-	public void enterAddressField(String address) {
+	public ManageContactPage enterAddressField(String address) {
 		addressfield.sendKeys(address);
+		return this;
 	}
-	public void enterDeliveryTime(String deliverytimeinput) {
+	public ManageContactPage enterDeliveryTime(String deliverytimeinput) {
 		deliverytime.sendKeys(deliverytimeinput);
+		return this;
 	}
-	public void enterDeliveryChargeLimit(String chargelimit) {
+	public ManageContactPage enterDeliveryChargeLimit(String chargelimit) {
 		deliverychargelimit.sendKeys(chargelimit);
+		return this;
 	}
-	public void clickUpdatebutton() {
+	public ManageContactPage clickUpdatebutton() {
 		//wait.waitForElementToBeClickable(driver, updatemanagecontactbutton);
 		page.javaScriptExecutorClick(driver, updatemanagecontactbutton);
 		//updatemanagecontactbutton.click();
+		return this;
 	}
 	public boolean updatedAlertMessageIsDisplayed() {
 		return contactupdatedalert.isDisplayed();
